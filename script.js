@@ -6,6 +6,7 @@ const questions = [
     b: "Coding Style Sheets",
     c: "Cascading Simple Sheets",
     d: "Cars SUVs & Sailboats",
+    e: "Counter Strike Source",
     correct: "a",
   },
   {
@@ -14,6 +15,7 @@ const questions = [
     b: "2021",
     c: "2022",
     d: "2023",
+    e: "2020",
     correct: "b",
   },
   {
@@ -21,8 +23,27 @@ const questions = [
     a: "Bosnia and Herzegovina Famous Foundation",
     b: "Bosnia and Herzegovina Futures Foundation",
     c: "Bosnia and Herzegovina Factory Foundation",
-    d: "none of the above",
+    d: "Bosnia and Herzegovina Futuristic Foundation",
+    e: "none of the above",
     correct: "b",
+  },
+  {
+    question: "Are you ready for hackathon?",
+    a: "No",
+    b: "Yes",
+    c: "Just let me finish this quiz",
+    d: "Read above",
+    e: "Read it, damn",
+    correct: "c",
+  },
+  {
+    question: "What is the best country in the world?",
+    a: "Bosnia and Herzegovina",
+    b: "You",
+    c: "Know",
+    d: "The",
+    e: "Answer",
+    correct: "a",
   },
 ];
 
@@ -34,6 +55,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
 const submitButton = document.getElementById("submit");
 
 //Counters
@@ -63,6 +85,7 @@ const loadQuiz = () => {
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
+  e_text.innerText = currentQuizData.e;
 };
 
 //Loading the quiz
